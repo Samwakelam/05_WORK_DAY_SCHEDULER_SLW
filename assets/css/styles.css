@@ -1,0 +1,99 @@
+/*Body Border */
+
+html {
+    border:5px solid black;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(../images/BodyBackgroundSmall.png);
+    background-repeat: repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+
+section{
+    border: 5px solid black;
+    background-color: rgb(155,223,242);
+    width: 90%;
+    margin: 5%;
+}
+
+h1, h3, p#today-date {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* planner section */
+div#planner {
+    background-color: rgb(146,220,207);
+    width: 80%;
+    margin: 10%;
+}
+
+div.hour {
+    display: inline-block;
+    width: 15%;
+    border: 2px solid black;
+    background-color: rgb(187,146,212);
+    padding: 2px;
+}
+
+div.content {
+    display: inline-block;
+    width: 70%;
+    border: 2px solid black;
+    background-color:white;
+    padding: 2px;
+}
+
+div.save {
+    display: inline-block;
+    width: 15%;
+    border: 2px solid black;
+    background-color: rgb(251,152,216);
+}
+
+div.past {
+    background-color:lightgrey;
+}
+
+div.current {
+    background-color:rgb(146,220,207);
+}
+
+p.time {
+    width: 100%;
+    text-align: right;
+}
+
+button {
+    background-color: rgb(251,152,216);
+    border: 3px solid;
+    border-color:  rgb(180, 95, 150); ;
+
+}
+
+button:hover {
+    background-color: rgb(252, 190, 230);
+    border: 3px solid;
+    border-color:  rgb(180, 95, 150); ;
+}
+
+button:active {
+    background-color:  rgb(180, 95, 150); ;
+    border: 3px solid;
+    border-color:  rgb(251,152,216); ;
+}
+
+button.save-btn {
+    text-align: center;
+    margin: 0;
+    
+}
+
