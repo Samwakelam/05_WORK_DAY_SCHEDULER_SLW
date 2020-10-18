@@ -7,16 +7,20 @@ $(document).ready(function(){
     // 1. create a <p> tag with an element for the date.
     // 2. GET and insert the current date in the page.
     // 3. display the DynamicsCompressorNode, Date, month, year 
-    const todayDate = new Date();
-    const dayName = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday"];
-    const monthName = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+    // const todayDate = new Date();
+    // const dayName = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday"];
+    // const monthName = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     const todayDateParagraph = $("#today-date");
-    todayDateParagraph.html(dayName[todayDate.getDay()] + " " + todayDate.getDate() + " " + monthName[todayDate.getMonth()] + " " + todayDate.getFullYear());
+    // todayDateParagraph.html(dayName[todayDate.getDay()] + " " + todayDate.getDate() + " " + monthName[todayDate.getMonth()] + " " + todayDate.getFullYear());
+    todayDateParagraph.html(moment().format('MMMM Do YYYY'));
 
     // WHEN I scroll down
     // THEN I am presented with time blocks for standard business hours
     // 1. create time blocks
-    const currentHour = todayDate.getHours();
+
+    // const currentHour = todayDate.getHours();
+    const currentHour = moment().hours();
     console.log("currentHour = ", currentHour);
     
     let contentString = [];
